@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Etch-a-Sketch</title>
+
+    <meta charset="utf-8">
+    <script src="script.js" defer></script>
+
+    <style>
+        body{
+            padding: 50px;
+            margin: 0;
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #b1b1b1;
+            height: 100vh;
+            width: 100vh;
+            margin-left: 25%;
+        }
+        .buttonsContainer{
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .buttonsContainer button{
+            height: 50px;
+            border: 0;
+            border-radius: 15px;
+            width: 205px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttonsContainer"><button id="changeSize">Change the size of the grid</button></div>
+    <div id="container"></div>
+</body>
+</html>
